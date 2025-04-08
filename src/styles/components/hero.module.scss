@@ -1,0 +1,87 @@
+/* styles/hero-section.module.scss */
+
+.heroSection {
+  padding: 4rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1280px;
+  width: 100%;
+}
+
+.content {
+  flex: 1;
+  text-align: right;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  color: #00694b;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.ctaBtn {
+  background-color: #00694b;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.ctaBtn:hover {
+  background-color: #00523a;
+}
+
+.imageWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  .whtaspp_icon {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: var(--gr-color);
+    border-radius: 50%;
+    width: 74px;
+    height: 74px;
+    display: flex;
+    cursor: pointer;
+    img {
+      margin: auto;
+    }
+  }
+}
+
+.heroImage {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .content {
+    text-align: center;
+  }
+}

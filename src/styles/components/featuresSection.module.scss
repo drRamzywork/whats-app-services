@@ -1,0 +1,139 @@
+// /* styles/features-section.module.scss */
+
+// .featuresSection {
+//   padding: 4rem 1rem;
+// }
+
+// .sectionTitle {
+//   text-align: center;
+//   font-size: 2rem;
+//   margin-bottom: 3rem;
+//   text-align: center;
+// }
+
+// .sec_title {
+//   text-align: center;
+// }
+
+// .featuresWrapper {
+//   display: grid;
+//   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+//   gap: 2rem;
+// }
+
+// .featureBox {
+//   background: white;
+//   padding: 2rem;
+//   border-radius: 12px;
+//   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+//   text-align: center;
+//   transition: transform 0.3s ease;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .featureBox:hover {
+//   transform: translateY(-8px);
+// }
+
+// .iconWrapper {
+//   margin-bottom: 1rem;
+// }
+
+// .featureBox h3 {
+//   font-size: 1.3rem;
+//   color: #00694b;
+//   margin-bottom: 0.5rem;
+// }
+
+// .featureBox p {
+//   color: #555;
+//   font-size: 1rem;
+//   line-height: 1.6;
+// }
+
+// @media (max-width: 768px) {
+//   .sectionTitle {
+//     font-size: 1.6rem;
+//   }
+//   .featureBox {
+//     padding: 1.5rem;
+//   }
+// }
+.featuresSection {
+  padding: 4rem 1rem;
+  background-color: #000;
+  color: white;
+}
+
+.sectionTitle,
+.sec_title {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.sec_title {
+  margin-top: 34px;
+}
+.chatBotBox,
+.apiBox {
+  display: flex;
+  align-items: flex-start;
+  // gap: 2rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatBotBox {
+  flex-direction: row-reverse;
+}
+
+.apiBox {
+  flex-direction: row-reverse;
+}
+.imageWrapper {
+  flex-shrink: 0;
+}
+
+.chatBotContent,
+.apiContent {
+  // flex: 1;
+}
+
+.topic_title {
+  background: linear-gradient(134.22deg, #1a7cbf 9.33%, #25cf42 108%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.sec_title {
+  color: #ccc;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.list {
+  list-style: disc;
+  padding-right: 1.25rem;
+  line-height: 1.8;
+  color: #eee;
+}
+
+@media (max-width: 768px) {
+  .chatBotBox,
+  .apiBox {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .chatBotContent ul,
+  .apiContent ul {
+    padding-right: 0;
+  }
+}
