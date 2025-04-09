@@ -3,7 +3,7 @@ import styles from '@/styles/components/featuresSection.module.scss';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import animationData from '@/lotties/gif/service_2.json';
-import Lottie from 'lottie-react';
+import LottieWrapper from '@/lotties/LottieWrapper';
 
 const FeaturesSection = () => {
   return (
@@ -137,7 +137,8 @@ const FeaturesSection = () => {
           </div> */}
 
           <div className={styles.imageWrapper} style={{ width: 500, height: 500 }}>
-            <Lottie animationData={animationData} loop={true} />
+            <LottieWrapper animationData={animationData} loop={true} />
+
           </div>
 
           <div className={styles.shape_bottom}>
