@@ -8,7 +8,10 @@ import Link from 'next/link';
 const Hero = () => {
   return (
     <section className={styles.heroSection}>
+
       <div className={styles.container}>
+
+
         <div className={styles.content}>
 
           <p>ابدا مشروعك وتميز به </p>
@@ -40,7 +43,7 @@ const Hero = () => {
               ابدأ الآن
             </Link>
           </motion.div>
-        </div>
+        </div >
 
         <motion.div
           className={styles.imageWrapper}
@@ -63,12 +66,17 @@ const Hero = () => {
               alt="whatsapp_icon"
               width={50}
               height={50}
-              className={styles.heroImage}
+              className={styles.heroImage2}
             />
           </Link>
         </motion.div>
-      </div>
-    </section>
+
+
+      </div >
+
+
+
+    </section >
   );
 };
 

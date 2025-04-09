@@ -20,25 +20,31 @@
 .content {
   flex: 1;
   text-align: right;
+  width: fit-content;
 }
 
 .content h1 {
-  font-size: 2.5rem;
-  color: #00694b;
+  font-size: 64px;
+  font-weight: 700;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
 .content p {
-  font-size: 1.2rem;
-  color: #444;
+  font-weight: 400;
+  font-size: 36px;
+  color: #ffffff;
   margin-bottom: 2rem;
 }
 
 .ctaBtn {
-  background-color: #00694b;
+  display: block;
+  max-width: 70%;
+  text-align: center;
+  background: var(--gr-color);
   color: white;
   padding: 0.75rem 2rem;
-  border-radius: 6px;
+  border-radius: 28px;
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
@@ -74,14 +80,47 @@
 .heroImage {
   max-width: 100%;
   height: auto;
+  // display: none;
 }
 
 @media (max-width: 992px) {
+  .imageWrapper {
+    width: 100%;
+  }
+
+  .buttonWrapper {
+    display: flex;
+
+    .ctaBtn {
+      margin: auto;
+    }
+  }
+
+  .imageWrapper {
+    position: unset;
+  }
+  .heroImage {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    right: 0;
+    opacity: 1;
+
+    backdrop-filter: blur(25px);
+  }
   .container {
     flex-direction: column;
     text-align: center;
   }
   .content {
     text-align: center;
+    p {
+      font-size: 23px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 48px;
+    }
   }
 }
