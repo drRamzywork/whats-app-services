@@ -3,6 +3,7 @@ import styles from '@/styles/components/featuresSection.module.scss';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import animationData from '@/lotties/gif/service_2.json';
+import animationData2 from '@/lotties/gif/service_1.json';
 import LottieWrapper from '@/lotties/LottieWrapper';
 
 const FeaturesSection = () => {
@@ -54,8 +55,12 @@ const FeaturesSection = () => {
               className={styles.heroImage}
             />
           </div>
-          <div className={styles.imageWrapper}>
+          {/* <div className={styles.imageWrapper}>
             <Image src="/assets/imgs/services_1.svg" alt="chatbot" width={500} height={500} />
+          </div> */}
+
+          <div className={styles.imageWrapper} style={{ width: 500, height: 500 }}>
+            <LottieWrapper animationData={animationData2} loop={true} />
           </div>
           <div className={styles.chatBotContent}>
             <h3 className={styles.topic_title}>
@@ -138,7 +143,6 @@ const FeaturesSection = () => {
 
           <div className={styles.imageWrapper} style={{ width: 500, height: 500 }}>
             <LottieWrapper animationData={animationData} loop={true} />
-
           </div>
 
           <div className={styles.shape_bottom}>

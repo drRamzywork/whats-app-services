@@ -129,12 +129,19 @@ h3.topic_title {
   .featuresSection {
     padding: 0;
   }
-  .imageWrapper,
   .shape_top,
   .shape_bottom {
     display: none;
   }
-
+  .imageWrapper {
+    height: unset !important;
+    width: unset !important;
+    img,
+    svg {
+      height: 280px !important;
+      object-fit: contain;
+    }
+  }
   h3.topic_title {
     font-size: 23px;
   }
