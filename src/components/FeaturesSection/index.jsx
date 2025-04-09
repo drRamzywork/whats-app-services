@@ -2,6 +2,8 @@ import React from 'react';
 import styles from '@/styles/components/featuresSection.module.scss';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import animationData from '../../../public/assets/gif/service_2.json';
+import Lottie from 'lottie-react';
 
 const FeaturesSection = () => {
   return (
@@ -130,9 +132,14 @@ const FeaturesSection = () => {
               <li>خفض تكاليف خدمة العملاء</li>
             </ul>
           </div>
-          <div className={styles.imageWrapper}>
-            <Image src="/assets/imgs/services_2.svg" alt="api" width={500} height={500} />
+          {/* <div className={styles.imageWrapper}>
+            <Image src="/assets/imgs/services_2.gif" alt="api" width={500} height={500} />
+          </div> */}
+
+          <div className={styles.imageWrapper} style={{ width: 500, height: 500 }}>
+            <Lottie animationData={animationData} loop={true} />
           </div>
+
           <div className={styles.shape_bottom}>
 
 
